@@ -1,5 +1,46 @@
+inherit_mode:
+  merge:
+    - AllowedMethods
+    - AllowedReceivers
+    - Exclude
+    - Environments
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/migrate/legacy/*'
+
 Florence/ServiceSingleEntryPoint:
   Description: 'Service objects should only have one entry point.'
   Enabled: true
   VersionAdded: '0.1.0'
   Include: ['app/**/services/**/*.rb']
+
+Lint/MissingSuper:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - ./config/routes.rb
+
+Rails/DynamicFindBy:
+  AllowedReceivers:
+    - Hubspot::Company
+Rails/UnknownEnv:
+  Environments:
+    - staging
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/config/onboarding_requirements/florence_spec.rb
+    - spec/db/seeds_spec.rb
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/StubbedMock:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  AllowedMethods:
+    - perform
