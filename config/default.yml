@@ -1,5 +1,25 @@
+inherit_mode:
+  merge:
+    - Exclude
+    - Environments
+
+AllCops:
+  NewCops: enable
+
 Florence/ServiceSingleEntryPoint:
   Description: 'Service objects should only have one entry point.'
   Enabled: true
   VersionAdded: '0.1.0'
   Include: ['app/**/services/**/*.rb']
+Lint/MissingSuper:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude: [./config/routes.rb]
+Rails/UnknownEnv:
+  Environments: [staging]
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/StubbedMock:
+  Enabled: false
+Style/Documentation:
+  Enabled: false

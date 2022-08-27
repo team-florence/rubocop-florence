@@ -1,29 +1,44 @@
 # Rubocop::Florence
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/florence`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Single source of truth for Ruby styling across our Ruby projects.
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+Add to your gemfile:
 
-    $ bundle add rubocop-florence --require=false
+```rb
+group :development do
+  gem 'rubocop-florence', git: 'https://github.com/team-florence/rubocop-florence', tag: '< ADD VERSION TAG HERE >', require: false
+end
+```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+rubocop-florence handles all of our other Rubocop extensions and their versions for you so you can remove all other Rubocop gems from your Gemfile, including Rubocop itself.
 
-    $ gem install rubocop-florence
+```rb
+# Bad
+group :development do
+  gem 'rubocop'
+  gem 'rubocop-rails'
+  gem 'rubocop-florence', git: 'https://github.com/team-florence/rubocop-florence', tag: '< ADD VERSION TAG HERE >', require: false
+end
 
-## Usage
+# Good
+group :development do
+  gem 'rubocop-florence', git: 'https://github.com/team-florence/rubocop-florence', tag: '< ADD VERSION TAG HERE >', require: false
+end
+```
 
-TODO: Write usage instructions here
+Then at the very top of your project's `.rubocop.yml` file add:
 
-## Development
+```yaml
+inherit_gem:
+  rubocop-florence: config/.florence.rubocop.yml
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+# Any other project-specific config here...
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+This points your project to inherit its Rubocop config from the centralised config within the rubocop-florence gem.
 
-## Contributing
+That is it!
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubocop-florence.
+rubocop-florence will now handle the rubocop versions your project is running and ensure all our projects are enforcing the same Ruby style guide.
