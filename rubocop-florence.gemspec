@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
 
-  spec.add_runtime_dependency 'rubocop', '~> 1.31.0'
+  spec.add_runtime_dependency 'rubocop', '>= 1.31', '< 1.37'
   spec.add_runtime_dependency 'rubocop-performance', '~> 1.14.0'
   spec.add_runtime_dependency 'rubocop-rails', '~> 2.15.0'
   spec.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
