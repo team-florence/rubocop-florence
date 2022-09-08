@@ -5,12 +5,6 @@ inherit_mode:
 
 AllCops:
   NewCops: enable
-
-Florence/ServiceSingleEntryPoint:
-  Description: 'Service objects should only have one entry point.'
-  Enabled: true
-  VersionAdded: '0.1.0'
-  Include: ['app/**/services/**/*.rb']
 Lint/MissingSuper:
   Enabled: false
 Metrics/BlockLength:
