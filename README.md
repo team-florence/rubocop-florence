@@ -42,3 +42,16 @@ This points your project to inherit its Rubocop config from the centralised conf
 That is it!
 
 rubocop-florence will now handle the rubocop versions your project is running and ensure all our projects are enforcing the same Ruby style guide.
+
+## Development
+
+### How to release a new version
+
+1. Ensure all the changes to be included in the new version are merged to `main`
+2. Submit a final PR which bumps the version (`lib/rubocop/florence/version.rb`) number and updates CHANGELOG.md
+3. Seek approval then merge the PR
+4. Visit the Github repo's releases page: https://github.com/team-florence/rubocop-florence/releases and draft a new release
+5. Fill out the draft release form:
+  - The tag should match the version number in `lib/rubocop/florence/version.rb` and be of the form `v1.2.3`
+  - The release title should match the tag
+  - The description should match the CHANGELOG entry for this version
