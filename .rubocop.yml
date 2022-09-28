@@ -8,3 +8,8 @@ Naming/FileName:
     - lib/rubocop-florence.rb
 Rails:
   Enabled: false
+RSpec:
+  Language:
+    Expectations:
+      - expect_no_offenses
+      - expect_offense
