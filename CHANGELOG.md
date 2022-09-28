@@ -1,4 +1,5 @@
 ## [Unreleased]
+- Add cop: Florence/ServiceSingleEntryPoint
 
 ## [0.2.0] - 2022-09-13
 - Bump rubocop from 1.31 to 1.36
