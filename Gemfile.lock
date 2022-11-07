@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rubocop-florence (0.2.0)
-      rubocop (>= 1.36, < 1.38)
+      rubocop (>= 1.36, < 1.39)
       rubocop-performance (~> 1.15.0)
       rubocop-rails (>= 2.16, < 2.18)
       rubocop-rake (~> 0.6.0)
@@ -12,11 +12,12 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.4)
+    activesupport (6.1.7)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     ast (2.4.2)
     concurrent-ruby (1.1.10)
     diff-lcs (1.5.0)
@@ -38,14 +39,14 @@ GEM
       rspec-mocks (~> 3.11.0)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
-    rspec-expectations (3.11.0)
+    rspec-expectations (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-mocks (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
-    rubocop (1.37.1)
+    rubocop (1.38.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.2.1)
@@ -80,6 +81,7 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.3.0)
+    zeitwerk (2.6.5)
 
 PLATFORMS
   arm64-darwin-21
