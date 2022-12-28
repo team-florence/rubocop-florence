@@ -1,5 +1,9 @@
-## [Unreleased]
-- Add cop: Florence/ServiceSingleEntryPoint
+## [0.3.0] - 2022-12-28
+- Add cop Florence/ServiceSingleEntryPoint
+- Bump rubocop to 1.41.1
+- Bump rubocop-performance to 1.15.2
+- Bump rubocop-rails to 2.17.4
+- Bump rubocop-rspec to 2.16.0
 
 ## [0.2.0] - 2022-09-13
 - Bump rubocop from 1.31 to 1.36
