@@ -27,11 +27,11 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'rubocop', '>= 1.36', '< 1.41'
-  spec.add_runtime_dependency 'rubocop-performance', '~> 1.15.0'
-  spec.add_runtime_dependency 'rubocop-rails', '>= 2.16', '< 2.18'
-  spec.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
-  spec.add_runtime_dependency 'rubocop-rspec', '>= 2.13.1', '< 2.17.0'
-  spec.add_runtime_dependency 'rubocop-thread_safety', '~> 0.4.4'
+  spec.add_runtime_dependency 'rubocop', '1.41.1'
+  spec.add_runtime_dependency 'rubocop-performance', '1.15.2'
+  spec.add_runtime_dependency 'rubocop-rails', '2.17.4'
+  spec.add_runtime_dependency 'rubocop-rake', '0.6.0'
+  spec.add_runtime_dependency 'rubocop-rspec', '2.16.0'
+  spec.add_runtime_dependency 'rubocop-thread_safety', '0.4.4'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
