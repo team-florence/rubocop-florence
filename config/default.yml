@@ -7,7 +7,7 @@ AllCops:
   NewCops: enable
 Florence/ServiceSingleEntryPoint:
   Description: 'Service objects should only have one entry point.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.3.0'
   Include: ['app/**/services/**/*.rb']
 Lint/MissingSuper:
