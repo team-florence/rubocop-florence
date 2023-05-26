@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe RuboCop::Cop::Florence::ServiceSingleEntryPoint, :config do
-  let(:config) { RuboCop::Config.new }
-
   it 'registers no offence when the only public methods are .call, #initialize, and #call' do
     expect_no_offenses(<<~RUBY)
       class ServiceClass
