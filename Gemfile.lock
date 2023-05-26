@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-florence (0.3.0)
+    rubocop-florence (0.4.0)
       rubocop (= 1.51.0)
       rubocop-performance (= 1.18.0)
       rubocop-rails (= 2.19.1)

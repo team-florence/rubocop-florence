@@ -1,3 +1,13 @@
+## [0.4.0] - 2023-05-26
+- Bump CI Ruby version to 3.0.6
+- Bump rubocop to 1.51.0
+- Bump rubocop-performance to 1.18.0
+- Bump rubocop-thread_safety to 0.5.1
+- Bump rubocop-rails to 2.19.1
+- Bump rubocop-rspec to 2.22.0
+- Bump development dependencies
+- Bump required ruby version to 2.7.0
+
 ## [0.3.0] - 2022-12-28
 - Add cop Florence/ServiceSingleEntryPoint
 - Bump rubocop to 1.41.1
