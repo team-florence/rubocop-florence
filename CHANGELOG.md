@@ -1,3 +1,7 @@
+## [0.5.0]
+- Add rubocop-capybara
+- Add rubocop-factory_bot
+
 ## [0.4.0] - 2023-05-26
 - Bump CI Ruby version to 3.0.6
 - Bump rubocop to 1.51.0
