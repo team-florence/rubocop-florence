@@ -13,3 +13,5 @@ RSpec:
     Expectations:
       - expect_no_offenses
       - expect_offense
+RSpec/ExampleLength:
+  Max: 13
