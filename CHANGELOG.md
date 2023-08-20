@@ -1,3 +1,8 @@
+## [0.6.0]
+- Bump rubocop to 1.56.0
+- Bump rubocop-performance to 1.19.0
+- Bump rubocop-rspec to 2.23.2
+
 ## [0.5.0]
 - Add rubocop-capybara
 - Add rubocop-factory_bot
