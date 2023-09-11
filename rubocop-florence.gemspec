@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'rubocop-capybara', '2.18.0'
   spec.add_runtime_dependency 'rubocop-factory_bot', '2.23.1'
   spec.add_runtime_dependency 'rubocop-performance', '1.19.0'
-  spec.add_runtime_dependency 'rubocop-rails', '2.20.2'
+  spec.add_runtime_dependency 'rubocop-rails', '2.21.0'
   spec.add_runtime_dependency 'rubocop-rake', '0.6.0'
   spec.add_runtime_dependency 'rubocop-rspec', '2.23.2'
   spec.add_runtime_dependency 'rubocop-thread_safety', '0.5.1'
