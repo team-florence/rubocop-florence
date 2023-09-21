@@ -1,3 +1,10 @@
+## [0.7.0]
+- Bump rubocop to 1.56.3
+- Bump rubocop-factory_bot to 2.24.0
+- Bump rubocop-performance to 1.19.1
+- Bump rubocop-rails to 2.21.1
+- Bump rubocop-rspec to 2.24.0
+
 ## [0.6.0]
 - Bump rubocop to 1.56.0
 - Bump rubocop-performance to 1.19.0
