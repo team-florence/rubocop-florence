@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'rubocop', '1.56.3'
-  spec.add_runtime_dependency 'rubocop-capybara', '2.18.0'
+  spec.add_runtime_dependency 'rubocop-capybara', '2.19.0'
   spec.add_runtime_dependency 'rubocop-factory_bot', '2.24.0'
   spec.add_runtime_dependency 'rubocop-performance', '1.19.1'
   spec.add_runtime_dependency 'rubocop-rails', '2.21.1'
