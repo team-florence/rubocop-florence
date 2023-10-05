@@ -1,3 +1,9 @@
+## [0.8.0]
+- Bump rubocop to 1.56.4
+- Bump rubocop-rails to 2.21.2
+- Bump rubocop-capybara to 2.19.0
+- Bump rubocop-rspec to 2.24.1
+
 ## [0.7.0]
 - Bump rubocop to 1.56.3
 - Bump rubocop-factory_bot to 2.24.0
