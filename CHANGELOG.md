@@ -1,3 +1,8 @@
+## [0.9.0]
+- Bump rubocop to 1.57.2
+- Bump rubocop-rails to 2.22.2
+- Bump rubocop-rspec to 2.25.0
+
 ## [0.8.0]
 - Bump rubocop to 1.56.4
 - Bump rubocop-rails to 2.21.2
