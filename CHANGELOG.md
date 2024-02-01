@@ -1,3 +1,15 @@
+## [0.11.0]
+- enforce consistent style for Layout/FirstArgumentIndentation
+- enforce consistent style for Layout/FirstArrayElementIndentation
+- enforce consistent style for Layout/FirstHashElementIndentation
+- enable Layout/FirstArrayElementLineBreak
+- enable Layout/FirstHashElementLineBreak
+- enable Layout/FirstMethodArgumentLineBreak
+- enable Layout/FirstMethodParameterLineBreak
+- enable Layout/MultilineMethodArgumentLineBreaks
+- enable Layout/MultilineMethodParameterLineBreaks
+- enable Style/DisableCopsWithinSourceCodeDirective
+
 ## [0.10.0]
 - Bump rubocop-factory_bot to 2.25.1
 - Bump rubocop-capybara to 2.20.0
