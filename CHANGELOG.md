@@ -9,6 +9,7 @@
 - enable Layout/MultilineMethodArgumentLineBreaks
 - enable Layout/MultilineMethodParameterLineBreaks
 - enable Style/DisableCopsWithinSourceCodeDirective
+- Bump rubocop to 1.60.2
 
 ## [0.10.0]
 - Bump rubocop-factory_bot to 2.25.1
