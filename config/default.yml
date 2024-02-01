@@ -5,20 +5,47 @@ inherit_mode:
 
 AllCops:
   NewCops: enable
+
 Florence/ServiceSingleEntryPoint:
   Description: 'Service objects should only have one entry point.'
   Enabled: false
   VersionAdded: '0.3.0'
   Include: ['app/**/services/**/*.rb']
+
+Layout/FirstArgumentIndentation:
+  EnforcedStyle: consistent
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+Layout/MultilineMethodParameterLineBreaks:
+  Enabled: true
+
 Lint/MissingSuper:
   Enabled: false
+
 Metrics/BlockLength:
   Exclude: [./config/routes.rb]
+
 Rails/UnknownEnv:
   Environments: [staging]
+
 RSpec/ExpectInHook:
   Enabled: false
 RSpec/StubbedMock:
   Enabled: false
+
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: true
 Style/Documentation:
   Enabled: false
