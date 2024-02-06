@@ -49,3 +49,5 @@ Style/DisableCopsWithinSourceCodeDirective:
   Enabled: true
 Style/Documentation:
   Enabled: false
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
