@@ -4,6 +4,8 @@ module RuboCop
   module Cop
     module Florence
       class UuidPrimaryKey < Base
+        extend AutoCorrector
+
         RESTRICT_ON_SEND = [:create_table].freeze
         MSG = 'Use uuid primary keys.'
 
@@ -12,7 +14,13 @@ module RuboCop
 
           return if id_argument&.sym_type? && id_argument.value == :uuid
 
-          add_offense(node)
+          add_offense(node) do |corrector|
+            if id_argument.nil?
+              corrector.insert_after(node, ', id: :uuid')
+            else
+              corrector.replace(id_argument, ':uuid')
+            end
+          end
         end
 
         private
