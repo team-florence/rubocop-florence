@@ -1,15 +1,20 @@
 # frozen_string_literal: true
 
+require 'rubocop-rails'
+
 module RuboCop
   module Cop
     module Florence
       class UuidPrimaryKey < Base
+        include MigrationsHelper
         extend AutoCorrector
 
         RESTRICT_ON_SEND = [:create_table].freeze
         MSG = 'Use uuid primary keys.'
 
         def on_send(node)
+          return unless in_migration?(node)
+
           id_argument = find_id_argument(node)
 
           return if id_argument&.sym_type? && id_argument.value == :uuid
