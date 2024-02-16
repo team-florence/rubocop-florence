@@ -1,3 +1,6 @@
+## [0.12.0]
+- Add cop Florence/UuidPrimaryKey
+
 ## [0.11.0]
 - enforce consistent style for Layout/FirstArgumentIndentation
 - enforce consistent style for Layout/FirstArrayElementIndentation
