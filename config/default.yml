@@ -6,6 +6,10 @@ inherit_mode:
 AllCops:
   NewCops: enable
 
+Florence/UuidPrimaryKey:
+  Description: 'Database tables should use uuid primary keys.'
+  Enabled: false
+  VersionAdded: '0.12.0'
 Florence/ServiceSingleEntryPoint:
   Description: 'Service objects should only have one entry point.'
   Enabled: false
