@@ -1,5 +1,6 @@
 ## [0.12.0]
 - Add cop Florence/UuidPrimaryKey
+- add EnforcedShorthandSyntax: never for Style/HashSyntax
 
 ## [0.11.0]
 - enforce consistent style for Layout/FirstArgumentIndentation
