@@ -19,13 +19,7 @@ module RuboCop
 
           return if id_argument&.sym_type? && id_argument.value == :uuid
 
-          add_offense(node) do |corrector|
-            if id_argument.nil?
-              corrector.insert_after(node, ', id: :uuid')
-            else
-              corrector.replace(id_argument, ':uuid')
-            end
-          end
+          add_offense(node) { |corrector| add_uuid_option(corrector, node, id_argument) }
         end
 
         private
@@ -37,6 +31,16 @@ module RuboCop
             next unless pair.key.sym_type? && pair.key.value == :id
 
             break pair.value
+          end
+        end
+
+        def add_uuid_option(corrector, node, id_argument)
+          if node.last_argument.nil?
+            corrector.insert_after(node, ' id: :uuid')
+          elsif id_argument.nil?
+            corrector.insert_after(node, ', id: :uuid')
+          else
+            corrector.replace(id_argument, ':uuid')
           end
         end
       end

@@ -93,7 +93,7 @@ RSpec.describe RuboCop::Cop::Florence::UuidPrimaryKey, :config do
       RUBY
     end
 
-    it 'registers an offence when create_table a primary key other than uuid, other options, and a block' do
+    it 'registers an offence when create_table specifies a primary key other than uuid, other options, and a block' do
       expect_offense(<<~RUBY)
         class MigrationName < ActiveRecord::Migration[7.1]
           def change
@@ -109,6 +109,29 @@ RSpec.describe RuboCop::Cop::Florence::UuidPrimaryKey, :config do
         class MigrationName < ActiveRecord::Migration[7.1]
           def change
             create_table :table_name, foo: :bar, id: :uuid, baz: :qux do |t|
+              t.string :column_name
+            end
+          end
+        end
+      RUBY
+    end
+
+    it 'registers an offence when create_table has no arguments' do
+      expect_offense(<<~RUBY)
+        class MigrationName < ActiveRecord::Migration[7.1]
+          def change
+            create_table do |t|
+            ^^^^^^^^^^^^ Use uuid primary keys.
+              t.string :column_name
+            end
+          end
+        end
+      RUBY
+
+      expect_correction(<<~RUBY)
+        class MigrationName < ActiveRecord::Migration[7.1]
+          def change
+            create_table id: :uuid do |t|
               t.string :column_name
             end
           end
