@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'rubocop-performance', '1.20.2'
   spec.add_runtime_dependency 'rubocop-rails', '2.23.1'
   spec.add_runtime_dependency 'rubocop-rake', '0.6.0'
-  spec.add_runtime_dependency 'rubocop-rspec', '2.26.1'
+  spec.add_runtime_dependency 'rubocop-rspec', '2.27.1'
   spec.add_runtime_dependency 'rubocop-thread_safety', '0.5.1'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
