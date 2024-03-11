@@ -1,3 +1,8 @@
+## [0.13.0]
+- Bump rubocop to 1.62.0
+- Bump rubocop-rspec to 2.27.1
+- Bump rubocop-rails to 2.24.0
+
 ## [0.12.0]
 - Add cop Florence/UuidPrimaryKey
 - add EnforcedShorthandSyntax: never for Style/HashSyntax
