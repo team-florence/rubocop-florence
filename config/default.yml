@@ -7,14 +7,14 @@ AllCops:
   NewCops: enable
 
 Florence/UuidPrimaryKey:
-  Description: 'Database tables should use uuid primary keys.'
+  Description: "Database tables should use uuid primary keys."
   Enabled: false
-  VersionAdded: '0.12.0'
+  VersionAdded: "0.12.0"
 Florence/ServiceSingleEntryPoint:
-  Description: 'Service objects should only have one entry point.'
+  Description: "Service objects should only have one entry point."
   Enabled: false
-  VersionAdded: '0.3.0'
-  Include: ['app/**/services/**/*.rb']
+  VersionAdded: "0.3.0"
+  Include: ["app/**/services/**/*.rb"]
 
 Layout/FirstArgumentIndentation:
   EnforcedStyle: consistent
@@ -40,6 +40,9 @@ Lint/MissingSuper:
 
 Metrics/BlockLength:
   Exclude: [./config/routes.rb]
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
 
 Rails/UnknownEnv:
   Environments: [staging]
