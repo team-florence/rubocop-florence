@@ -3,7 +3,7 @@ PATH
   specs:
     rubocop-florence (0.13.0)
       rubocop (= 1.62.1)
-      rubocop-capybara (= 2.20.0)
+      rubocop-capybara (= 2.21.0)
       rubocop-factory_bot (= 2.26.1)
       rubocop-performance (= 1.21.0)
       rubocop-rails (= 2.24.1)
@@ -73,7 +73,7 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.32.3)
       parser (>= 3.3.1.0)
-    rubocop-capybara (2.20.0)
+    rubocop-capybara (2.21.0)
       rubocop (~> 1.41)
     rubocop-factory_bot (2.26.1)
       rubocop (~> 1.61)
