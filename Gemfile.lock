@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-florence (0.15.1)
+    rubocop-florence (0.15.2)
       rubocop (= 1.66.1)
       rubocop-capybara (= 2.21.0)
       rubocop-factory_bot (= 2.26.1)

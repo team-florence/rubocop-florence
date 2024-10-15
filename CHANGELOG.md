@@ -1,3 +1,7 @@
+## [0.15.2]
+
+- Add missing require for `rubocop-rspec_rails`
+
 ## [0.15.1]
 
 - Disable Rails/WhereRange
