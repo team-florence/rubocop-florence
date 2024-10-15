@@ -1,3 +1,8 @@
+## [0.15.0]
+
+- Bump rubocop to 1.66.1
+- Bump rubocop-rails to 2.26.2
+
 ## [0.14.0]
 
 - Test on ruby 3.3.4
