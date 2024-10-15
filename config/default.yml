@@ -46,6 +46,8 @@ Metrics/ParameterLists:
 
 Rails/UnknownEnv:
   Environments: [staging]
+Rails/WhereRange:
+  Enabled: false
 
 RSpec/ExpectInHook:
   Enabled: false
