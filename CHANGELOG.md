@@ -1,3 +1,7 @@
+## [0.15.1]
+
+- Disable Rails/WhereRange
+
 ## [0.15.0]
 
 - Bump rubocop to 1.66.1
