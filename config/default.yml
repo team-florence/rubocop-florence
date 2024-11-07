@@ -58,5 +58,8 @@ Style/DisableCopsWithinSourceCodeDirective:
   Enabled: true
 Style/Documentation:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  SafeAutoCorrect: true
 Style/HashSyntax:
   EnforcedShorthandSyntax: never
