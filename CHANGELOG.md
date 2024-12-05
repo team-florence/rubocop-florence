@@ -1,3 +1,7 @@
+## [0.16.0]
+
+- Bump rubocop to 1.69.1
+
 ## [0.15.2]
 
 - Add missing require for `rubocop-rspec_rails`
